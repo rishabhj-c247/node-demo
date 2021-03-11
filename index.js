@@ -17,7 +17,6 @@ app.set("view engine", "ejs")
 app.use(bodyparser.json()) 
 app.use(bodyparser.urlencoded({ extended: true })) 
 
-
 app.get("/", function (req, res) { 
 	res.render("Sample-form"); 
 }) 
