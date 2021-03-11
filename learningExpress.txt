@@ -1,0 +1,40 @@
+Routers -> To sepearate the routes from index.js file
+
+express.Router();
+
+Dynamic Router -> 
+
+localhost:3000/123
+
+'/:id' -> req.params.id 
+
+Regex -> /:id([0-9]{5})
+
+mongoose -> document Modeling 
+
+Mongo -> use my-db create a database
+
+var personScheme = mongoose.Schema({
+  name: String,
+  age : Number,
+  nationality : String
+})
+
+var Person = mongoose.model("Person", personSchema)
+
+show dbs -> databases list
+db.dropDatabase()
+
+body-parser -> 3rd party middle ware for parse th body of requests which payloads attached to them
+
+cookieParser -> 
+
+Multer gives the option of storing files to disk
+
+db.collection_name.insert()
+
+Create Array of Objects and the pass in .insert if you have more records 
+
+//Express not parse encoded fonts so we need body-parser.urlencoded({extended : true})
+
+Multer -> used for uploading files
